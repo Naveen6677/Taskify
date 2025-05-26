@@ -5,14 +5,14 @@ const taskList = document.getElementById('taskList');
 addTaskButton.addEventListener('click', () => {
     const taskText = taskInput.value.trim();
     // console.log(taskText);
-    if (taskText === '') {
-        alert("Please enter a task.");
-    } else if (/^\d+$/.test(taskText)) {
-        alert("Task should not be numbers only.");
-    } else {
-        addTask(taskText);
-        taskInput.value = '';
-    }
+        if (taskText === '') {
+            alert("Please enter a task.");
+        } else if (/^\d+$/.test(taskText)) {
+            alert("Task should not be numbers only.");
+        } else {
+            addTask(taskText);
+            taskInput.value = '';
+        }
 });
 
 function addTask(text) {
